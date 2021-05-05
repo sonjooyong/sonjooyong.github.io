@@ -8,6 +8,45 @@
                 border-collapse: collapse;
                 padding: 8px;
             }
+            #title {
+                width: 125px;
+            }
+            #chae {
+                text-align: center;
+                background-color: cadetblue;
+            }
+            #web {
+                text-align: center;
+                background-color: burlywood;
+            }    
+            #state {
+                text-align: center;
+                background-color: cornflowerblue;
+            }      
+            #digital {
+                text-align: center;
+                background-color: palevioletred;
+            }      
+            #communication {
+                text-align: center;
+                background-color: green;
+            }    
+            #english {
+                text-align: center;
+                background-color: skyblue;
+            }
+            #leadership {
+                text-align: center;
+                background-color: thistle;
+            }
+            #system {
+                text-align: center;
+                background-color: sandybrown;
+            }
+            #development {
+                text-align: center;
+                background-color: slategrey;
+            }
         </style>
     </head>
     <body>
@@ -15,16 +54,16 @@
         <table>
             <tr>
                 <th>시간/요일</th>
-                <th>월<br>(MON)</th>
-                <th>화<br>(TUE)</th>
-                <th>수<br>(WED)</th>
-                <th>목<br>(THU)</th>
-                <th>금<br>(FRI)</th>
+                <th id="title">월<br>(MON)</th>
+                <th id="title">화<br>(TUE)</th>
+                <th id="title">수<br>(WED)</th>
+                <th id="title">목<br>(THU)</th>
+                <th id="title">금<br>(FRI)</th>
             </tr>
             <tr>
                 <td>0교시<br>08:30~09:20</td>
                 <td></td>
-                <td>채플</td>
+                <td id="chae">채플</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -34,22 +73,22 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td>웹 프로그래밍</td>
+                <td id="web">웹 프로그래밍</td>
                 <td></td>
             </tr>
             <tr>
                 <td>2교시<br>10:30~11:20</td>
-                <td rowspan="2">웹 프로그래밍</td>
+                <td rowspan="2" id="web">웹 프로그래밍</td>
                 <td></td>
                 <td></td>
-                <td rowspan="3">경영정보시스템</td>
+                <td rowspan="3" id="system">경영정보시스템</td>
                 <td></td>
             </tr>
             <tr>
                 <td>3교시<br>11:30~12:20</td>
                 
                 <td></td>
-                <td rowspan="2">대학영어회화2</td>
+                <td rowspan="2" id="english">대학영어회화2</td>
                 
                 <td></td>
             </tr>
@@ -64,7 +103,7 @@
             <tr>
                 <td>5교시<br>13:30~14:20</td>
                 <td></td>
-                <td rowspan="3">경영통계</td>
+                <td rowspan="3" id="state">경영통계</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -74,21 +113,21 @@
                 <td></td>
                 
                 <td></td>
-                <td rowspan="2">디지털콘텐츠<br>비즈니스개론<br>(창업)</td>
+                <td rowspan="2" id="digital">디지털콘텐츠<br>비즈니스개론<br>(창업)</td>
                 <td></td>
             </tr>
             <tr>
                 <td>7교시<br>15:30~16:20</td>
                 <td></td>
                 
-                <td rowspan="2">리더쉽(벤처)</td>
+                <td rowspan="2" id="leadership">리더쉽(벤처)</td>
                 
-                <td>자기이해와개발1</td>
+                <td id="development">자기이해와개발1</td>
             </tr>
             <tr>
                 <td>8교시<br>16:30~17:20</td>
                 <td></td>
-                <td>디지털콘텐츠<br>비즈니스개론<br>(창업)</td>
+                <td id="digital">디지털콘텐츠<br>비즈니스개론<br>(창업)</td>
                 
                 <td></td>
                 <td></td>
@@ -96,7 +135,7 @@
             <tr>
                 <td>9교시<br>17:30~18:20</td>
                 <td></td>
-                <td rowspan="2">공감과소통</td>
+                <td rowspan="2" id="communication">공감과소통</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -116,5 +155,6 @@
         <h3><a href='호서행사안내페이지.html'>[호서 행사 안내]</a></h3>
         <h3><a href='night-open.html'>[야간 개장 안내]</a></h3>
         <h3><a href="spring-sale.html">[세일 안내장]</a></h3>
+        <h3><a href="schedule.html">[월간 일정표]</a></h3>
     </body>
 </html>
