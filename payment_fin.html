@@ -44,45 +44,46 @@ height: 2px;
 border: 0px solid;
 background-color: #404040;
 } 
-
-section{width: 400px; 
-height: 170px;
-margin-left: 70px;
-}
-
-#test{border: solid 2px #404040;
-border-radius: 10px;
-margin-left: 900px;
-margin-top: 20px;
-width: 240px;
-height: 40px;
+ 
+section{ height: 300px;  color: #404040;
 text-align: center;
-padding-top: 18px;
-font-size: larger;
-display: inline-block;
-background-color: #F2F2F2;
-}
+margin-top: 130px;}
 
-#know{border: solid 2px #404040;
-border-radius: 10px;
-margin-left: 900px;
-margin-top: 130px;
-width: 240px;
-height: 40px;
+#count{border: solid 2px #404040;
+	border-radius: 5px; margin-left: 10px;
+width: 380px;
+height: 50px; margin: auto;
 text-align: center;
-padding-top: 18px;
-font-size: larger;
+padding-top: 20px;
+font-size: x-large;}
+
+#pp{margin-top: 40px;
+ text-align: center;}
+
+aside {color: #404040;
+height: 100px; text-align: center;
+margin: auto;}
+
+#main{border: solid 2px #404040; background-color: #F2F2F2;
+	border-radius: 5px;
+	width: 240px;
+height: 40px;
+padding-top: 15px;
+text-align: center;
+font-size: large;
+display: inline-block;}
+
+#go{border: solid 2px #404040; background-color: #F2F2F2;
+	border-radius: 5px;
+	width: 240px;
+height: 40px;
+padding-top: 15px;
+text-align: center;
+font-size: large;
 display: inline-block;
-background-color: #F2F2F2;
-}
+margin-left: 200px;}
 
-#hand{margin: 80px 0px 0px 100px;
-}
-
-aside{float: left; 
-margin: auto; margin-left: 90px;}
-
-footer {clear:both; margin-top: 450px; background-color: #404040;
+footer {clear:both; margin-top: 80px; background-color: #404040;
 text-align: center; height: 55px;}
 
 footer li {display:inline; font-size: 14px; color: #F2F2F2;}
@@ -117,25 +118,26 @@ a:hover {text-decoration: none; color: black;}
 </header>
 <hr>
 <section>
-      <img id="hand" src="img/co.PNG">
+    <div id="count">결제 완료 되었습니다.</div>
+    <p id="pp">카카오톡 메신저로 연락드린 후<br>
+		 상담날짜 잡아드리겠습니다. <br>지금 바로 확인해 주세요.</p>
 </section>
 <aside>
-	<a href="testlist.html"><div id="test">테스트 하러 가기</div></a>
-	<a href="counsel_list1.html"><div id="know">상담 알아보기</div></a>
+    <a href="index.html"><div id="main">메인 화면</div> </a>
+    <a href="testlist.html"><div id="go">테스트 하러가기</div> </a>
 </aside>
-
 <footer>
-<ul>
-	<li>왜그래 what'swrong?</li>
-	<li>|</li>
-	<li>당신의 마음을 고쳐드리겠습니다</li>
-	<li>|</li>
-	<li>수분크림</li><br>
-	<li>전화번호: 041-123-1234</li>
-	<li>|</li>
-	<li>천안시 동남구 안서동</li>
-	
-</ul>
-</footer>
+	<ul>
+		<li>왜그래 what'swrong?</li>
+		<li>|</li>
+		<li>당신의 마음을 고쳐드리겠습니다</li>
+		<li>|</li>
+		<li>수분크림</li><br>
+		<li>전화번호: 041-123-1234</li>
+		<li>|</li>
+		<li>천안시 동남구 안서동</li>
+		
+	</ul>
+	</footer>
 </body>
 </html>

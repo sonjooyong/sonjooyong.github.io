@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>왜그래</title>
+        <meta charset="utf-8">
+       <style>
+            * {padding: 0px; margin: 0px;
+			}
+header { 
+    height: 77px;
+    margin: 10px 0px 0px 0px; 
+    }
+#name {
+	margin-top: 20px;
+	float: left;
+    }
+h1, h4 {display: inline-block;
+color: #404040;}
+h1 {font-size: 50px; margin-left: 20px;}
+h4 {font-size: 20px;}
+li {list-style-type: none;}
+#top_menu {float: right;
+width: 150px;
+margin-top: 0px;
+margin-bottom: 0px;
+display: inline;
+}
+#top_menu li {display: inline;
+font-size: 15px;
+color: #404040;
+} 
+#searchimg {display: inline-block;
+padding-right: 3px;}
+#box {display: inline-block;}
+#search {
+    clear: right;
+	display: inline-block;
+	float: right;
+	border: solid 0px #404040;
+	width: 270px;
+	padding-right: 0px;}
+hr {
+height: 2px;
+border: 0px solid;
+background-color: #404040;
+}
+                
+            section {
+                width: 500px; color: #404040;
+               
+                margin: auto; margin-top: 65px;               
+            }
+            .clear {clear: both;}
+            table, tr, td {
+                border: solid 0px black;
+                border-collapse: collapse;
+            }
+            td {
+                width: 300px;   
+                height: 40px;             
+            }
+            #th {
+                width: 190px;
+            }
+            #done {                
+                width: 100px;
+                height: 25px;
+                text-align: center;
+                border: solid 1px #404040;
+                background-color: #F2F2F2;
+                color: #404040;
+                border-radius: 5px;
+                margin-left: 390px;
+            }
+            #solution {
+                border-left: solid 5px #404040;
+                color:rgb(80, 80, 80);
+                padding-left: 15px;
+                font-size: 20px;
+            }
+            footer {clear:both; margin-top: 180px; background-color: #404040;
+text-align: center; height: 55px;}
+
+footer li {display:inline; font-size: 14px; color: #F2F2F2;}
+
+a:link {text-decoration: none; color: #404040}
+a:visited {text-decoration: none; color: #404040;}
+a:hover {text-decoration: none; color: black;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <div id="name">
+                    <h1>왜그래</h1>&nbsp;<h4>what's wrong</h4>
+                </div>
+                </a>
+            <div id="top_menu">
+                <ul>
+                    <li><a href="로그인.html">LOGIN</a></li>
+                    <li>|</li>
+                    <li><a href="마이페이지.html"> MYPAGE</a></li><br><br>
+                    <div id="search">
+                        <div id="searchimg" >
+                            <img src="img/seaching.png" width="18px">
+                        </div>
+                        <div id="box" >
+                            <input type="search" style="width: 230px;" placeholder="SEARCH">
+                        </div>
+                </ul>
+            </div>
+        </header>
+        <hr>
+        <div class="clear"></div>
+        <section>
+            <form>
+                <table>
+                    <tr>
+                        <td id="th">아이디</td><td><input type="text"></td>                        
+                    </tr>
+                    <tr>                        
+                        <td id="th">패스워드</td><td><input type="password">&nbsp;&nbsp;<a href="마이페이지.html"><button type="button">변경하기</button></a></td>                        
+                    </tr>   
+                    <tr>
+                        <td id="th">전화번호</td><td><input type="text" style="width: 50px;"> - <input type="text" style="width: 60px;"> - <input type="text" style="width: 60px;">&nbsp;&nbsp;<a href="마이페이지.html"><button type="button">변경하기</button></a></td>
+                    </tr>   
+                    <tr>                
+                        <td id="th">정보수신 동의 (휴대폰)</td><td><input type="radio" name="a">수신함&nbsp;&nbsp;<input type="radio" name="a" checked>수신안함</td>  
+                    </tr>                
+                </table>
+                <br><a href="index.html"><div id="done">완료하기</div></a>
+                <br><br><br>
+                <div id="solution">상담 내역</div>
+                <br><span style="color: rgb(80, 80, 80); margin-left: 15px;">상담 내역 없음</span>
+            </form>
+        </section>
+        <footer>
+            <ul>
+                <li>왜그래 what'swrong?</li>
+                <li>|</li>
+                <li>당신의 마음을 고쳐드리겠습니다</li>
+                <li>|</li>
+                <li>수분크림</li><br>
+                <li>전화번호: 041-123-1234</li>
+                <li>|</li>
+                <li>천안시 동남구 안서동</li>
+                
+            </ul>
+            </footer>
+    </body>
+</html>

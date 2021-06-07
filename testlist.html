@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>왜그래</title>
+        <meta charset="utf-8">
+       <style>
+            * {padding: 0px; margin: 0px;
+			}
+header { 
+    height: 77px;
+    margin: 10px 0px 0px 0px; 
+    }
+#name {
+	margin-top: 20px;
+	float: left;
+    }
+h1, h4 {display: inline-block;
+color: #404040;}
+h1 {font-size: 50px; margin-left: 20px;}
+h4 {font-size: 20px;}
+li {list-style-type: none;}
+#top_menu {float: right;
+width: 150px;
+margin-top: 0px;
+margin-bottom: 0px;
+display: inline;
+}
+#top_menu li {display: inline;
+font-size: 15px;
+color: #404040;
+} 
+#searchimg {display: inline-block;
+padding-right: 3px;}
+#box {display: inline-block;}
+#search {
+    clear: right;
+	display: inline-block;
+	float: right;
+	border: solid 0px #404040;
+	width: 270px;
+	padding-right: 0px;}
+hr {
+height: 2px;
+border: 0px solid;
+background-color: #404040;
+}        
+
+section{width: 1400px;
+margin: 10px;
+padding: 10px;
+}
+#wrap {
+        width: 900px;
+        margin: 60px auto;
+        position: relative;
+        overflow: hidden;
+		box-shadow: 5px 5px 5px 3px #404040
+		
+    }
+
+    .slide {
+        width: 3000px;
+          }
+
+    .slide>li {
+        width: 1000px;
+        float: left;
+        height: 420px;
+    }
+
+    .slide>li>img {
+        width: 100%;
+        height: 100%;
+    }
+
+   
+
+    #wrap>span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        font-size: 38px;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.6);
+        height: 50px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .prev {
+        left: 0;
+        border-radius: 0 10px 10px 0;
+        padding: 0 8px 0 2px;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 10px 0 0 10px;
+        padding: 0 2px 0 8px;
+    }
+    #wrap > span:hover { background:rgba(255,255,255,0.8); 
+    	color:#000;}
+div{border: solid 0px #404040;}
+.list{
+	width: 1300px;
+	height: 280px;
+}
+
+#mbti{margin-left: 250px;
+margin-top: 20px;margin-bottom: 20px;
+color:#404040;
+}
+
+.img{float: left; margin-right: 50px;}
+.title{float: left;}
+.title li{margin-left: 10px;
+display: block;
+border-bottom: dotted 2px #404040;
+padding-top: 25px; padding-bottom: 10px;
+width: 520px; 
+}
+#sad{clear: both;
+margin-left: 250px;
+margin-top: 40px;
+color:#404040;}
+.big{font-size: 30px;
+font-weight: bold;}
+.small{font-size: 20px;
+}
+#stress{clear: both;
+margin-left: 250px;
+margin-top: 40px;
+color:#404040;}
+section hr{height: 2px;
+	width: 1000px;
+margin-left: 180px;
+border: 0 none;
+background-color: #404040;}
+
+footer {clear:both; margin-top: 100px; background-color: #404040;
+text-align: center; height: 55px;}
+
+footer li {display:inline; font-size: 14px; color: #F2F2F2;}
+
+a:link {text-decoration: none; color: #404040}
+a:visited {text-decoration: none; color: #404040;}
+a:hover {text-decoration: none; color: black;}
+</style>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+	<header>
+		<a href="index.html">
+			<div id="name">
+				<h1>왜그래</h1>&nbsp;<h4>what's wrong</h4>
+			</div>
+			</a>
+		<div id="top_menu">
+			<ul>
+				<li><a href="로그인.html">LOGIN</a></li>
+				<li>|</li>
+				<li><a href="마이페이지.html"> MYPAGE</a></li><br><br>
+				<div id="search">
+					<div id="searchimg" >
+						<img src="img/seaching.png" width="18px">
+					</div>
+					<div id="box" >
+						<input type="search" style="width: 230px;" placeholder="SEARCH">
+					</div>
+			</ul>
+		</div>
+	</header>
+	<hr>
+<section>
+	<div id="wrap">
+        <ul class="slide">
+            <li>
+                <img src="img/test1.jpg" alt="slide image" width="640px" height="426px" >
+            </li>
+            <li>
+                <img src="img/test2.jpg" alt="slide image"width="640px" height="426px" >
+            </li>
+            <li>
+                <img src="img/test3.jpg" alt="slide image" width="640px" height="426px">
+            </li>
+        </ul>
+    
+        <span class="prev">&lt;</span>
+        <span class="next">&gt;</span>
+    </div>
+    <script>
+    $('.prev').click(function(){
+    	$('.slide li:last').prependTo('.slide');
+    	$('.slide').css('margin-left',-1000);
+    	$('.slide').stop().animate({marginLeft:0}, 800)
+    });
+    $('.next').click(function(){
+    	$('.slide').stop().animate({marginLeft:-1000},800, function(){
+    		$('.slide li:first').appendTo('.slide');
+    		$('.slide').css({marginLeft:0})
+    	})
+    });
+    </script>
+</section>
+
+<section>
+<div class="list">
+	<div id="mbti">
+		<div class="img">
+			<a href="mbti_0.html">
+			<img src="img/mbti.jpeg" width="300px">
+		</a>
+		</div>
+		<div class="title">
+		<ul>
+			<li class="big"><a href="mbti_0.html">MBTI 테스트</a> </li>
+		
+			<li class="small">성격 유형 검사를 통해 당신을 보다 자세하게 알아보세요</li>
+		</ul>
+		</div>
+		</div>
+		</div>
+</div>
+
+<hr>
+
+<div class="list">
+	<div id="sad">
+		<div class="img">
+			<a href="sad_0.html">
+			<img src="img/sad.png" width="300px">
+		</a>
+		</div>
+		<div class="title">
+			<ul>
+				<li class="big"><a href="sad_0.html">우울증 자가진단</a></li>
+			
+				<li class="small">코로나 혹은 평소에 일상에 지친 당신의 마음<br>
+				당신의 마음 속을 확인해보세요</li>
+			</ul>
+			</div>
+	</div>
+</div>
+
+<hr>
+
+<div class="list">
+	<div id="stress">
+		<div class="img">
+			<img src="img/stress.jpeg" width="300px" height="210px">
+		</div>
+		<div class="title">
+			<ul>
+				<li class="big"><a href="stress_0.html">스트레스 자가진단</a></li>
+			
+				<li class="small">바쁜 현대 사회 속에서 당신도 모르게 받고 있는 스트레스<br>
+				스트레스를 얼마나 받고 있는지 확인해보세요</li>
+			</ul>
+			</div>
+	</div>
+</div>
+</section>
+<footer>
+	<ul>
+		<li>왜그래 what'swrong?</li>
+		<li>|</li>
+		<li>당신의 마음을 고쳐드리겠습니다</li>
+		<li>|</li>
+		<li>수분크림</li><br>
+		<li>전화번호: 041-123-1234</li>
+		<li>|</li>
+		<li>천안시 동남구 안서동</li>
+		
+	</ul>
+	</footer>
+</body>
+</html>

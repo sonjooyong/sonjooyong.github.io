@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>왜그래</title>
+        <meta charset="utf-8">
+       <style>
+            * {padding: 0px; margin: 0px;
+			}
+header { 
+    height: 77px;
+    margin: 10px 0px 0px 0px; 
+    }
+#name {
+	margin-top: 20px;
+	float: left;
+    }
+h1, h4 {display: inline-block;
+color: #404040;}
+h1 {font-size: 50px; margin-left: 20px;}
+h4 {font-size: 20px;}
+li {list-style-type: none;}
+#top_menu {float: right;
+width: 150px;
+margin-top: 0px;
+margin-bottom: 0px;
+display: inline;
+}
+#top_menu li {display: inline;
+font-size: 15px;
+color: #404040;
+} 
+#searchimg {display: inline-block;
+padding-right: 3px;}
+#box {display: inline-block;}
+#search {
+    clear: right;
+	display: inline-block;
+	float: right;
+	border: solid 0px #404040;
+	width: 270px;
+	padding-right: 0px;}
+hr {
+height: 2px;
+border: 0px solid;
+background-color: #404040;
+}        
+
+            h2 { color: #404040;
+                padding-top: 0px; padding-left: 40px;                
+            }
+            #done { border: solid 1px #404040;
+                width: 100px;
+                height: 25px;
+                text-align: center;
+                background-color: #F2F2F2;
+                color: #404040;
+                border-radius: 5px;
+            }   
+            aside { color: black;
+                border-top: solid 3px #404040;
+                border-right: solid 3px #404040;
+                border-bottom: solid 3px #404040;
+                float: left; 
+                width: 380px;
+                height: 300px;
+                margin-top: 10px;
+                padding-top: 40px; padding-right: 50px;
+            }
+            section { color: black;
+                border-top: solid 3px #404040;
+                border-left: solid 3px #404040;
+                border-bottom: solid 3px #404040;
+                float: left; 
+                width: 380px;
+                height: 300px;
+                margin-top: 10px;
+                padding-top: 40px; padding-left: 50px;
+            }
+            .clear {
+                clear: both;
+            }        
+            #login {
+                margin: 70px 0 0 330px;
+            }
+            footer {clear:both; margin-top: 480px; background-color: #404040;
+text-align: center; height: 55px;}
+
+footer li {display:inline; font-size: 14px; color: #F2F2F2;}
+
+a:link {text-decoration: none; color: #404040}
+a:visited {text-decoration: none; color: #404040;}
+a:hover {text-decoration: none; color: black;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <div id="name">
+                    <h1>왜그래</h1>&nbsp;<h4>what's wrong</h4>
+                </div>
+                </a>
+            <div id="top_menu">
+                <ul>
+                    <li><a href="로그인.html">LOGIN</a></li>
+                    <li>|</li>
+                    <li><a href="마이페이지.html"> MYPAGE</a></li><br><br>
+                    <div id="search">
+                        <div id="searchimg" >
+                            <img src="img/seaching.png" width="18px">
+                        </div>
+                        <div id="box" >
+                            <input type="search" style="width: 230px;" placeholder="SEARCH">
+                        </div>
+                </ul>
+            </div>
+        </header>
+        <hr>
+        <div class="clear"></div>
+        <div id="login">
+         <h2>회원가입</h2>      
+        <section>
+            <br><br>              
+            <form> 
+            이름  &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" style="width: 135px;"><br><br>
+            아이디 &nbsp;<input type="text" style="width: 135px;"><br><br>
+            패스워드 &nbsp;<input type="password" style="width: 135px;"><br><br>
+            패스워드 확인 &nbsp;<input type="password" style="width: 135px;"><br><br>
+            </form>
+        </section>
+        <aside>
+            <br><br>
+            성별 &nbsp;
+            <select style="width: 90px;">
+                <option>----선택----</option>
+                <option>-----남-----</option>
+                <option>-----여-----</option>
+            </select><br><br>
+            휴대전화 &nbsp;<input type="text" style="width: 50px;"> - <input type="text" style="width: 60px;"> - <input type="text" style="width: 60px;"><br><br> 
+            <input type="checkbox"> 약간에 모두 동의합니다.<br><br><br>
+            <a href="index.html"><div id="done" style="margin-left: 230px;">가입완료</div></a>               
+            </form>   
+        </aside>
+        </div>
+        <footer>
+            <ul>
+                <li>왜그래 what'swrong?</li>
+                <li>|</li>
+                <li>당신의 마음을 고쳐드리겠습니다</li>
+                <li>|</li>
+                <li>수분크림</li><br>
+                <li>전화번호: 041-123-1234</li>
+                <li>|</li>
+                <li>천안시 동남구 안서동</li>
+                
+            </ul>
+            </footer>
+    </body>
+</html>
